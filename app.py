@@ -41,10 +41,24 @@ def show_vt_stats(target, stats):
 
 st.set_page_config(page_title="Mini TIP", page_icon=":mag:")
 st.title("Mini Threat Intel Checker")
-st.caption("Aggregator sederhana: VirusTotal + AbuseIPDB")
+st.caption("Aggregator sederhana: VirusTotal + AbuseIPDB + WHOIS + urlscan.io")
 
-vt_api_key = os.environ.get("VT_API_KEY")
-abuse_api_key = os.environ.get("ABUSEIPDB_API_KEY")
+
+def get_secret(key):
+    """
+    Cek Streamlit Secrets dulu (dipakai pas deploy di Streamlit Cloud),
+    kalau tidak ada baru fallback ke environment variable (dipakai pas
+    jalan lokal lewat `streamlit run app.py` biasa).
+    """
+    try:
+        return st.secrets[key]
+    except Exception:
+        return os.environ.get(key)
+
+
+vt_api_key = get_secret("VT_API_KEY")
+abuse_api_key = get_secret("ABUSEIPDB_API_KEY")
+urlscan_api_key_global = get_secret("URLSCAN_API_KEY")
 
 if not vt_api_key:
     st.error("VT_API_KEY belum di-set. Jalankan `export VT_API_KEY=...` di terminal sebelum start Streamlit.")
@@ -81,12 +95,11 @@ if st.button("Cek", type="primary"):
             st.caption("Data WHOIS tidak tersedia untuk domain ini.")
 
         # urlscan.io: opsional
-        urlscan_api_key = os.environ.get("URLSCAN_API_KEY")
-        if urlscan_api_key:
+        if urlscan_api_key_global:
             st.divider()
             st.subheader("urlscan.io")
             with st.spinner("Menunggu hasil scan urlscan.io (bisa sampai 30 detik)..."):
-                urlscan_result = core.urlscan_check(target, urlscan_api_key)
+                urlscan_result = core.urlscan_check(target, urlscan_api_key_global)
             if urlscan_result["status"] == "success":
                 data = urlscan_result["data"]
                 col1, col2, col3 = st.columns(3)
