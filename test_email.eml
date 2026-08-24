@@ -1,0 +1,172 @@
+Delivered-To: fildzaamaliazhafira@gmail.com
+Received: by 2002:a05:6f02:858c:b0:129:4b10:b1 with SMTP id f12csp2735079rch;
+        Sat, 22 Aug 2026 23:10:13 -0700 (PDT)
+X-Received: by 2002:a05:6830:3106:b0:7e6:ef2e:28a5 with SMTP id 46e09a7af769-7f461536008mr19550829a34.15.1787465413620;
+        Sat, 22 Aug 2026 23:10:13 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1787465413; cv=none;
+        d=google.com; s=arc-20260327;
+        b=Jkr8OB7Xss7YZK/piSzCABBEjHUXPrYA22knLGD+60zJ76zNv9b8L47B9NGRneurEZ
+         xATt6coRUlqSJza6am0E9VDNVOoSgm2Euegslrzz/6xBBDWDNnNq8ZprwGSKFLXCPmEp
+         NvXi1PUgXjasz/CN0rBNb0EYy9wqOOCIJ70jnjtGDKHRyhN3I9ym4whfOBcZFm25TDzV
+         SoFzuYjdr9YKJPm4i1ic3UvmSPQg4TrdfIvtLhSI8DM/lOLcHiIYXALXeT869w/K5Oez
+         EOFk8pgD/E2YuBHST1Y3O5nMzIBGmYKUzADFtwV/2lVvj7A890YuHWlNzlCKXRZNd3y8
+         W1kQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:from:subject:date:message-id:references:reply-to:mime-version
+         :dkim-signature;
+        bh=uBHF0PGiQNHdZGGknp91RBP6XFgCC2tbW51wm7dNHfA=;
+        fh=ZMFi594FNkhIlXhr5PHjYZYLvW0dLc4rnC05TwzJ8ZQ=;
+        b=sBeH+nJG2qRgTGfqWQWPKVOuF5oZ8UbBEbQujVNfrYES0Wa7plE7utwhOPb7bBqIId
+         2sTNWQec6JpPLZV/ovHKCCw9cHH7xMhYr5o676WxGs5SaDy+Edf1NDiQqrd+4PKW+auI
+         pV25EwSJw8toPPwO6u8sON7F4/7Aca3zcDZfNI17hEYAEMwvijtUR+fDB2LX9LIH+3fa
+         Rk2R+8s1bqdRKNxNHdFYqBHTNv3gb/aGdhTec1wj7rq3fapRxboapVsTGfYZRUWpZSXT
+         CC1CFGMa5klD5uFKJP6p1uC8asSZzUASeIpZJL2y2Ckakjn7ck88irEbXEqneifzD/w8
+         lsGw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=QK4Dwfeq;
+       spf=pass (google.com: domain of 3xy6kag8jaggfngloxggsgrogpmmsgor.ius@doclist.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3xY6Kag8JAGgfNGLOXGGSGROGpmMSGOR.IUS@doclist.bounces.google.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <3xY6Kag8JAGgfNGLOXGGSGROGpmMSGOR.IUS@doclist.bounces.google.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id 46e09a7af769-7f48fc020cbsor116267a34.1.2026.08.22.23.10.13
+        for <fildzaamaliazhafira@gmail.com>
+        (Google Transport Security);
+        Sat, 22 Aug 2026 23:10:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3xy6kag8jaggfngloxggsgrogpmmsgor.ius@doclist.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=QK4Dwfeq;
+       spf=pass (google.com: domain of 3xy6kag8jaggfngloxggsgrogpmmsgor.ius@doclist.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3xY6Kag8JAGgfNGLOXGGSGROGpmMSGOR.IUS@doclist.bounces.google.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1787465413; x=1788070213; dara=google.com;
+        h=content-type:to:from:subject:date:message-id:references:reply-to
+         :mime-version:from:to:cc:subject:date:message-id:reply-to
+         :content-type;
+        bh=uBHF0PGiQNHdZGGknp91RBP6XFgCC2tbW51wm7dNHfA=;
+        b=QK4Dwfeq3ROAGB+0zydZgp/f81Oge0qogo4/hrHKKo894wYwivvkzG81Nvne52QLVR
+         mbeDsVhYs/NEpuAn7hgcD9W0uCtV/uYUvp5k/Zyeot4VWcEGOaXS8kMe1RYQi+E0fK/H
+         Pk/EPKVoxohApUlJl/5R+oyqRFGslcg655N2GesIB9NR9HQl8nSIMsGnC0gtK6ZYmpu+
+         87KIVj7f4SuMyV7YOeKFs1YmSyrquHq1S0ztFOJfWfzvDsLVr3lE1Eu8ptXa/30JjZlT
+         73BJW4k4snANUBBuxEBtm31sXVsaKJZc6ohTtkbOr072/abcKvR7Z0IG25LF4DENtMed
+         gffw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1787465413; x=1788070213;
+        h=content-type:to:from:subject:date:message-id:references:reply-to
+         :mime-version:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to:content-type;
+        bh=uBHF0PGiQNHdZGGknp91RBP6XFgCC2tbW51wm7dNHfA=;
+        b=BVm06OFo0j4JfaBfeF8e1tGSF/Xq6cByCZdVx2asKeVXXrRAM02z5O8Fk6OhYuF5I8
+         IGiR6QnHWF7/6d8OESfEf5hjhRwTOWR0EaGdpwQ6Km+TvJ1nyIAx5/o5j2j3PaCL9uh1
+         2TQgMdXdLesdr/nlpuR916ILTb1IR0IprirgXZXyVLSWpxdLvlzd0/Pw0k7yDT79kgXF
+         az6g3sQSfxiEvVzbbY/0pSEJWalR9+Goif8pwzfQ+GigYiL5TUgsib3Jz8l2hlAoyL19
+         Z3/YeJo3MpLTM5QZbQh5mZ72TzD/8/NRsmB6R+eqTPP374pYUNkGJkPZn0F/P+pi94wP
+         ZPig==
+X-Gm-Message-State: AFuF++l0UhmSO/GzsJqv3jv5c14ygv9OLr8npEz//T4/YFgkfSzJ+4TC
+	Q0j3qA2+N1FsZOMgtnVLXNQBEMgq/KWORpwCWmDd1Vzpq5iISSmUKkrxcJakX8GqBemAbri70mn
+	IGapC494=
+MIME-Version: 1.0
+X-Received: by 2002:a05:6808:6902:b0:497:d23f:e621 with SMTP id
+ 5614622812f47-4b2ef3d94f7mr11619056b6e.2.1787465413236; Sat, 22 Aug 2026
+ 23:10:13 -0700 (PDT)
+Reply-To: Zhafira Amalia <zhafiraamalia96@gmail.com>
+X-No-Auto-Attachment: 1
+References: <812616c0-b39d-4ee0-b999-ddd06807e47a@docs-share.google.com>
+Message-ID: <autogen-java-8cf564e1-e465-476b-a178-b4050a6a9377@google.com>
+Date: Sun, 23 Aug 2026 06:10:13 +0000
+Subject: Ownership accepted for: "Financial Planner Monthly - Fildza"
+From: "Zhafira Amalia (via Google Sheets)" <zhafiraamalia96@gmail.com>
+To: fildzaamaliazhafira@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000011bb70659b0b9f8"
+
+--000000000000011bb70659b0b9f8
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+Zhafira Amalia accepted your ownership invitation
+
+Zhafira Amalia is the new owner
+
+Financial Planner Monthly - Fildza
+https://docs.google.com/spreadsheets/d/1UXI5EOiGUaraEc1hXiyX15jOe_htU6mi15T50gB43CE/edit?usp=sharing
+
+--000000000000011bb70659b0b9f8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><table style=3D"border-collapse: collapse; width: =
+100%; background-color: white; text-align: center;" role=3D"presentation"><=
+tr><td style=3D"padding: 24px 0 16px 0;"><table style=3D"border-collapse: c=
+ollapse;font-family: Roboto, Arial, Helvetica, sans-serif;hyphens: auto; ov=
+erflow-wrap: break-word; word-wrap: break-word; word-break: break-word;widt=
+h: 90%; margin: auto;max-width: 700px;min-width: 280px; text-align: left;" =
+role=3D"presentation"><tr><td style=3D"padding: 0;"><table style=3D"width:1=
+00%; border: 1px solid #dadce0; border-radius: 8px; border-spacing: 0; tabl=
+e-layout:fixed; border-collapse: separate;" role=3D"presentation"><tr><td s=
+tyle=3D"padding: 4.5%;" dir=3D"ltr"><div style=3D"margin-bottom:32px;font-f=
+amily: Google Sans, Roboto, Arial, Helvetica, sans-serif; font-style: norma=
+l; font-size: 28px; line-height: 36px; color: #3c4043;">Zhafira Amalia acce=
+pted your ownership invitation</div><table style=3D"border-collapse: collap=
+se;font-family: Roboto, Arial, Helvetica, sans-serif; font-size:16px; line-=
+height:24px; color:#202124; letter-spacing:0.1px; table-layout:fixed; width=
+:100%; overflow-wrap: break-word;" role=3D"presentation"><tr><td style=3D"p=
+adding: 0; vertical-align:top; width:50px;"><!--[if mso]><v:oval xmlns:v=3D=
+"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office=
+:word" style=3D"height:50px;width:50px;" fill=3D"t" stroke=3D"f"><v:fill ty=
+pe=3D"frame" src=3D"https://lh3.googleusercontent.com/a/ACg8ocLQ1OFvw1lblgm=
+VVWguiBYKQxfErH16gfzEgszkL6Qz2aQmpg=3Ds64" alt=3D"Header profile photo" sty=
+le=3D"height:50px;width:50px;"/></v:oval><![endif]--><div style=3D"mso-hide=
+:all;"><img style=3D"border-radius:50%; display:block;" width=3D"50" height=
+=3D"50" src=3D"https://lh3.googleusercontent.com/a/ACg8ocLQ1OFvw1lblgmVVWgu=
+iBYKQxfErH16gfzEgszkL6Qz2aQmpg=3Ds64" alt=3D"Header profile photo"></div></=
+td><td style=3D"padding: 0; vertical-align:top; padding-left:12px;"><div st=
+yle=3D"padding-top:12px;">Zhafira Amalia (<a href=3D"mailto:zhafiraamalia96=
+@gmail.com" style=3D"color:inherit;text-decoration:none">zhafiraamalia96@gm=
+ail.com</a>) is the new owner</div></td></tr></table><table style=3D"border=
+-spacing:0 4px; table-layout:fixed; width:100%; overflow-wrap: break-word;"=
+ role=3D"presentation"><tr style=3D"height:28px;"></tr><tr><td style=3D"pad=
+ding: 0;"><a href=3D"https://docs.google.com/spreadsheets/d/1UXI5EOiGUaraEc=
+1hXiyX15jOe_htU6mi15T50gB43CE/edit?usp=3Dsharing_epl" target=3D"_blank" sty=
+le=3D"color: #3c4043; display: inline-block; max-width: 100%; text-decorati=
+on: none; vertical-align: top;border: 1px solid #DADCE0; border-radius: 16p=
+x; white-space: nowrap;"><div style=3D"line-height: 18px; overflow: hidden;=
+ text-overflow: ellipsis;padding: 6px 12px;"><span style=3D"display: inline=
+-block; vertical-align: middle; min-width: 26px; width: 26px;"><img src=3D"=
+https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x6=
+4.png" width=3D"18" height=3D"18" style=3D"vertical-align: top;" role=3D"pr=
+esentation"></span><span style=3D"font: 500 14px/18px Google Sans, Roboto, =
+Arial, Helvetica, sans-serif; display: inline; letter-spacing: 0.2px; verti=
+cal-align: middle;">Financial Planner Monthly - Fildza</span></div></a></td=
+></tr></table><table style=3D"border-collapse: collapse;" role=3D"presentat=
+ion"><tr style=3D"height: 32px"><td></td></tr></table><div><!--[if mso]><v:=
+roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-=
+microsoft-com:office:word" href=3D"https://docs.google.com/spreadsheets/d/1=
+UXI5EOiGUaraEc1hXiyX15jOe_htU6mi15T50gB43CE/edit?usp=3Dsharing_epp" style=
+=3D"height:36px; width:100px; v-text-anchor:middle;" arcsize=3D"50%" stroke=
+=3D"f" fillcolor=3D"#1a73e8"><w:anchorlock/><center style=3D"color:#ffffff;=
+font-family:Arial,Helvetica,sans-serif;font-weight:500;font-size:14px;">Ope=
+n </center></v:roundrect><![endif]--><a href=3D"https://docs.google.com/spr=
+eadsheets/d/1UXI5EOiGUaraEc1hXiyX15jOe_htU6mi15T50gB43CE/edit?usp=3Dsharing=
+_epp" class=3D"material-button material-button-filled" target=3D"_blank" ta=
+bindex=3D"0" role=3D"link" style=3D"mso-hide:all;padding: 0 24px;font: 500 =
+14px/36px Google Sans, Roboto, Arial, Helvetica, sans-serif; border: none; =
+border-radius: 18px; box-sizing: border-box; display: inline-block; letter-=
+spacing: .25px; min-height: 36px; text-align: center; text-decoration: none=
+;background-color: #0B57D0; color: #fff; cursor: pointer;">Open</a></div></=
+td></tr></table><table style=3D"border-collapse: collapse; width: 100%;" ro=
+le=3D"presentation"><tr><td style=3D"padding: 24px 4.5%"><table style=3D"bo=
+rder-collapse: collapse; width: 100%;" dir=3D"ltr"><tr><td style=3D"padding=
+: 0;font-family: Roboto, Arial, Helvetica, sans-serif; color: #5F6368; widt=
+h: 100%; font-size: 12px; line-height: 16px; min-height: 40px; letter-spaci=
+ng: .3px;">Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, =
+USA<br/> You have received this email because your spreadsheet was shared w=
+ith <a href=3D"mailto:zhafiraamalia96@gmail.com" style=3D"color:inherit;tex=
+t-decoration:none">zhafiraamalia96@gmail.com</a>.</td><td style=3D"padding:=
+ 0;padding-left: 20px; min-width: 96px"><a href=3D"https://www.google.com/"=
+ target=3D"_blank" style=3D"text-decoration: none"><img src=3D"https://www.=
+gstatic.com/images/branding/googlelogo/2x/googlelogo_grey_tm_color_96x40dp.=
+png" width=3D"96" height=3D"40" alt=3D"Google" style=3D"font-size:16px;font=
+-weight:500;color:#5F6368"></a></td></tr></table></td></tr></table></td></t=
+r></table></td></tr></table></body></html>
+--000000000000011bb70659b0b9f8--
